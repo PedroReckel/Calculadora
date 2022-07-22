@@ -105,7 +105,8 @@ const mapaTeclado = {
 
 const mapearTeclado = (evento) => {
     const tecla = evento.key
-    const teclaPermitida = () => Object.keys(mapaTeclado).indexOf(tecla) != -1
+    const teclaPermitida = () => Object.keys(mapaTeclado).indexOf(tecla) != -1  // Varrer todo o objeto mapaTeclado para ver se a tecla digitada existe nesse objeto
+    // O indexOf retorna -1 quando não existe e diferente de -1 quando existe
     if(teclaPermitida()) document.getElementById(mapaTeclado[tecla]).click()
 }
 document.addEventListener('keydown', mapearTeclado)
