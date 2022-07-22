@@ -58,12 +58,13 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
-    color: rgb(1, 70, 1);
+    margin-top: 30px;
+    color: #66bbed;
 }
 
 footer > a {
     text-decoration: none;
-    color: rgb(1, 131, 1);
+    color: #6866ed;
 }
 
 footer > a:hover {
